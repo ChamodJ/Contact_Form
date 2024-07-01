@@ -6,22 +6,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="../output.css" rel="stylesheet">
 
+  
+
   <title>Contact Us</title>
 </head>
 
 <body class="w-full min-h-screen bg-GreenLight py-8 font-Karla xl:flex justify-center align-center">
+
+    <div id="toast" class="hidden fixed top-0 left-1/2 transform -translate-x-1/2 mt-4 px-4 py-4 bg-GrayDarker text-white rounded-md shadow-md">
+        <div class="flex">
+            <img src="../images/icon-success-check.svg"/>
+            <h3 class="ml-4">Message Sent!</h3>
+        </div>
+        
+        <p class="text-sm font-extralight text-GrayMedium mt-2">Thanks for completing the form. We'll be in touch soon!</p>
+    </div>
+
     <div class="bg-white w-[90%] h-full m-auto rounded-lg xl:w-[60%] xl:px-5">
         <div class="px-5 py-6">
             <div>
                 <h1 class="text-3xl font-extrabold text-GrayDarker">Contact Us</h1>
             </div>
-            <form class="mt-5">
+            <form id="contactForm" class="mt-5">
                 <div class="xl:flex w-full justify-between">
                     <div class="mb-3 flex-1">
                         <label for="fName">First Name <span class="text-GreenMedium">*</span></label> <br/>
                         <input type="text" name="fName" id="fName" 
                         class="border-[1px] border-GrayMedium w-full rounded-md p-2 mt-2 hover:border-GreenMedium hover:border-[2px] cursor-pointer"
-                        required/>
+                        />
+
+                        <p id="fNameError" class="mt-4 text-RedProject hidden">This Field is required</p>
                     </div>
     
                     <div class="mb-3 flex-1 xl:ml-4">
@@ -29,6 +43,8 @@
                         <input type="text" name="lName" id="lName" 
                         class="border-[1px] border-GrayMedium w-full rounded-md p-2 mt-2 hover:border-GreenMedium hover:border-[2px] cursor-pointer"
                         required/>
+
+                        <p id="lNameError" class="mt-4 text-RedProject hidden">This Field is required</p>
                     </div>
                 </div>
                 
@@ -38,6 +54,8 @@
                     <input type="text" name="uEmail" id="uEmail" 
                     class="border-[1px] border-GrayMedium w-full rounded-md p-2 mt-2 hover:border-GreenMedium hover:border-[2px] cursor-pointer"
                     required/>
+
+                    <p id="uEmailError" class="mt-4 text-RedProject hidden">This Field is required</p>
                 </div>
 
                 <div class="mb-3 ">
@@ -56,6 +74,7 @@
                             <label for="support" class="text-xl">Support Enquiry</label>
                         </div>
                     </div>    
+                    <p id="quarryError" class="mt-4 text-RedProject hidden">This Field is required</p>
                 </div>
 
                 <div class="mb-3">
@@ -63,12 +82,19 @@
                     <textarea rows="8" class="mt-2 border-[1px] border-GrayMedium rounded-md w-full p-2 hover:border-GreenMedium hover:border-[2px] cursor-pointer" name="message" id="message">
                         
                     </textarea>
+
+                    <p id="messageError" class="mt-4 text-RedProject hidden">This Field is required</p>
                 </div>
 
-                <div class="flex justify-between xl:justify-start">
-                    <input type="checkbox" name="agree" id="agree" 
-                    />
-                    <label for="agree" class="ml-4">I consent to being contacted by the team <span class="text-GreenMedium">*</span></label>
+                <div>
+                    <div class="flex justify-between xl:justify-start">
+                        <input type="checkbox" name="agree" id="agree" 
+                        />
+                        <label for="agree" class="ml-4">I consent to being contacted by the team <span class="text-GreenMedium">*</span></label>
+                    </div>
+
+                    <p id="agreeError" class="mt-4 text-RedProject hidden">To submit this form, please consent to being contacted</p>
+
                 </div>
 
                 <div class="border-2 w-full py-3 px-4 rounded-md text-white bg-GreenMedium mt-5 hover:bg-GrayDarker">
@@ -81,6 +107,7 @@
         </div>
     </div>
     
+    <script src="../index.js"></script>
 </body>
 
 </html>
