@@ -20,14 +20,14 @@
                     <div class="mb-3 flex-1">
                         <label for="fName">First Name <span class="text-GreenMedium">*</span></label> <br/>
                         <input type="text" name="fName" id="fName" 
-                        class="border-[1px] border-GrayMedium w-full rounded-md p-2 mt-2"
+                        class="border-[1px] border-GrayMedium w-full rounded-md p-2 mt-2 hover:border-GreenMedium hover:border-[2px] cursor-pointer"
                         required/>
                     </div>
     
-                    <div class="mb-3 flex-1 ml-4">
+                    <div class="mb-3 flex-1 xl:ml-4">
                         <label for="lName">Last Name <span class="text-GreenMedium">*</span></label> <br/>
                         <input type="text" name="lName" id="lName" 
-                        class="border-[1px] border-GrayMedium w-full rounded-md p-2 mt-2"
+                        class="border-[1px] border-GrayMedium w-full rounded-md p-2 mt-2 hover:border-GreenMedium hover:border-[2px] cursor-pointer"
                         required/>
                     </div>
                 </div>
@@ -36,22 +36,22 @@
                 <div class="mb-3">
                     <label for="uEmail">Email Address <span class="text-GreenMedium">*</span></label> <br/>
                     <input type="text" name="uEmail" id="uEmail" 
-                    class="border-[1px] border-GrayMedium w-full rounded-md p-2 mt-2"
+                    class="border-[1px] border-GrayMedium w-full rounded-md p-2 mt-2 hover:border-GreenMedium hover:border-[2px] cursor-pointer"
                     required/>
                 </div>
 
                 <div class="mb-3 ">
                     <p >Query Type :<span class="text-GreenMedium">*</span></p> <br/>
                     <div class="xl:flex justify-between">
-                        <div class="border-[1px] border-GrayMedium rounded-md w-full py-3 px-5 flex justify-Start align-baseline mb-4 xl:mb-0 xl:mr-4">
+                        <div class="border-[1px] border-GrayMedium rounded-md w-full py-3 px-5 flex justify-Start align-baseline mb-4 xl:mb-0 xl:mr-4 ">
                             <input type="radio" name="quarryType" id="general" value="general"
-                            class="mr-3 "
+                            class="mr-3 cursor-pointer"
                             />
                             <label for="general" class="text-xl">General Enquiry</label>
                         </div>
                         <div class="border-[1px] border-GrayMedium rounded-md w-full py-3 px-5 flex justify-Start align-baseline">
                             <input type="radio" name="quarryType" id="support" value="support"
-                            class="mr-3 "
+                            class="mr-3 cursor-pointer"
                             />
                             <label for="support" class="text-xl">Support Enquiry</label>
                         </div>
@@ -60,7 +60,7 @@
 
                 <div class="mb-3">
                     <label for="message">Message <span class="text-GreenMedium">*</span></label> <br/>
-                    <textarea rows="8" class="mt-2 border-[1px] border-GrayMedium rounded-md w-full p-2" name="message" id="message">
+                    <textarea rows="8" class="mt-2 border-[1px] border-GrayMedium rounded-md w-full p-2 hover:border-GreenMedium hover:border-[2px] cursor-pointer" name="message" id="message">
                         
                     </textarea>
                 </div>
@@ -71,7 +71,7 @@
                     <label for="agree" class="ml-4">I consent to being contacted by the team <span class="text-GreenMedium">*</span></label>
                 </div>
 
-                <div class="border-2 w-full py-3 px-4 rounded-md text-white bg-GreenMedium mt-5">
+                <div class="border-2 w-full py-3 px-4 rounded-md text-white bg-GreenMedium mt-5 hover:bg-GrayDarker">
                     <button type="submit" class="w-full ">
                         Submit
                     </button>
