@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../output.css" rel="stylesheet">
+
+  <title>Contact Us</title>
+</head>
+
+<body class="w-full min-h-screen bg-GreenLight py-8 font-Karla xl:flex justify-center align-center">
+    <div class="bg-white w-[90%] h-full m-auto rounded-lg xl:w-[60%] xl:px-5">
+        <div class="px-5 py-6">
+            <div>
+                <h1 class="text-3xl font-extrabold text-GrayDarker">Contact Us</h1>
+            </div>
+            <form class="mt-5">
+                <div class="xl:flex w-full justify-between">
+                    <div class="mb-3 flex-1">
+                        <label for="fName">First Name <span class="text-GreenMedium">*</span></label> <br/>
+                        <input type="text" name="fName" id="fName" 
+                        class="border-[1px] border-GrayMedium w-full rounded-md p-2 mt-2"
+                        required/>
+                    </div>
+    
+                    <div class="mb-3 flex-1 ml-4">
+                        <label for="lName">Last Name <span class="text-GreenMedium">*</span></label> <br/>
+                        <input type="text" name="lName" id="lName" 
+                        class="border-[1px] border-GrayMedium w-full rounded-md p-2 mt-2"
+                        required/>
+                    </div>
+                </div>
+                
+
+                <div class="mb-3">
+                    <label for="uEmail">Email Address <span class="text-GreenMedium">*</span></label> <br/>
+                    <input type="text" name="uEmail" id="uEmail" 
+                    class="border-[1px] border-GrayMedium w-full rounded-md p-2 mt-2"
+                    required/>
+                </div>
+
+                <div class="mb-3 ">
+                    <p >Query Type :<span class="text-GreenMedium">*</span></p> <br/>
+                    <div class="xl:flex justify-between">
+                        <div class="border-[1px] border-GrayMedium rounded-md w-full py-3 px-5 flex justify-Start align-baseline mb-4 xl:mb-0 xl:mr-4">
+                            <input type="radio" name="quarryType" id="general" value="general"
+                            class="mr-3 "
+                            />
+                            <label for="general" class="text-xl">General Enquiry</label>
+                        </div>
+                        <div class="border-[1px] border-GrayMedium rounded-md w-full py-3 px-5 flex justify-Start align-baseline">
+                            <input type="radio" name="quarryType" id="support" value="support"
+                            class="mr-3 "
+                            />
+                            <label for="support" class="text-xl">Support Enquiry</label>
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="mb-3">
+                    <label for="message">Message <span class="text-GreenMedium">*</span></label> <br/>
+                    <textarea rows="8" class="mt-2 border-[1px] border-GrayMedium rounded-md w-full p-2" name="message" id="message">
+                        
+                    </textarea>
+                </div>
+
+                <div class="flex justify-between xl:justify-start">
+                    <input type="checkbox" name="agree" id="agree" 
+                    />
+                    <label for="agree" class="ml-4">I consent to being contacted by the team <span class="text-GreenMedium">*</span></label>
+                </div>
+
+                <div class="border-2 w-full py-3 px-4 rounded-md text-white bg-GreenMedium mt-5">
+                    <button type="submit" class="w-full ">
+                        Submit
+                    </button>
+                </div>
+            </form>
+            
+        </div>
+    </div>
+    
+</body>
+
+</html>
