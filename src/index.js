@@ -97,3 +97,26 @@ document.getElementById('contactForm').addEventListener('submit' , function(even
         toastMessage()
     }
 })
+
+
+function selectQuarry(id, element) {
+    
+    var radios = document.querySelectorAll('input[name="quarryType"]');
+    radios.forEach(radio => {
+        radio.checked = false;
+    });
+
+    // Check the selected radio button by ID
+    document.getElementById(id).checked = true;
+
+    // Remove styles from previously selected element
+    var prevSelected = document.querySelector('.query-type.selected');
+    if (prevSelected) {
+        prevSelected.classList.remove('border-GreenMedium', 'bg-GreenLight', 'border-[2px]', 'selected');
+    }
+
+    // Add styles to the newly selected element
+    element.classList.add('border-GreenMedium', 'bg-GreenLight', 'border-[2px]', 'selected');
+
+    
+}

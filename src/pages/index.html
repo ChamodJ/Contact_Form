@@ -7,6 +7,7 @@
   <link href="../output.css" rel="stylesheet">
 
   
+  
 
   <title>Contact Us</title>
 </head>
@@ -22,8 +23,8 @@
         <p class="text-sm font-extralight text-GrayMedium mt-2">Thanks for completing the form. We'll be in touch soon!</p>
     </div>
 
-    <div class="bg-white w-[90%] h-full m-auto rounded-lg xl:w-[60%] xl:px-5">
-        <div class="px-5 py-6">
+    <div class="bg-white w-[90%] h-full m-auto rounded-lg xl:w-[60%] xl:px-5 ">
+        <div class="px-5 py-6 ">
             <div>
                 <h1 class="text-3xl font-extrabold text-GrayDarker">Contact Us</h1>
             </div>
@@ -62,15 +63,15 @@
                 <div class="mb-3 ">
                     <p >Query Type :<span class="text-GreenMedium">*</span></p> <br/>
                     <div class="xl:flex justify-between">
-                        <div class="border-[1px] border-GrayMedium rounded-md w-full py-3 px-5 flex justify-Start align-baseline mb-4 xl:mb-0 xl:mr-4 ">
+                        <div class="border-[1px] border-GrayMedium rounded-md w-full py-3 px-5 flex justify-Start align-baseline mb-4 xl:mb-0 xl:mr-4 query-type" onclick="selectQuarry('general' , this)">
                             <input type="radio" name="quarryType" id="general" value="general"
-                            class="mr-3 cursor-pointer"
+                            class="mr-3 cursor-pointer accent-GreenMedium w-4"
                             />
                             <label for="general" class="text-xl">General Enquiry</label>
                         </div>
-                        <div class="border-[1px] border-GrayMedium rounded-md w-full py-3 px-5 flex justify-Start align-baseline">
+                        <div class="border-[1px] border-GrayMedium rounded-md w-full py-3 px-5 flex justify-Start align-baseline query-type" onclick="selectQuarry('support', this)">
                             <input type="radio" name="quarryType" id="support" value="support"
-                            class="mr-3 cursor-pointer"
+                            class="mr-3 cursor-pointer accent-GreenMedium w-4"
                             />
                             <label for="support" class="text-xl">Support Enquiry</label>
                         </div>
@@ -89,7 +90,8 @@
 
                 <div>
                     <div class="flex justify-between xl:justify-start">
-                        <input type="checkbox" name="agree" id="agree" 
+                        <input type="checkbox" name="agree" id="agree"
+                        class="w-4 accent-GreenMedium" 
                         />
                         <label for="agree" class="ml-4">I consent to being contacted by the team <span class="text-GreenMedium">*</span></label>
                     </div>
