@@ -1,4 +1,8 @@
+[build]
+  base = "src/pages" 
+  publish = "src/pages"
+
 [[redirects]]
-from ="/'
-to = "/index.html"
-status = 200
+  from = "/*"
+  to = "/index.html"
+  status = 200
