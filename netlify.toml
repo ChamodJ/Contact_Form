@@ -1,5 +1,5 @@
 [build]
-  base = "src/pages" 
+  base = "" 
   publish = "src/pages"
 
 [[redirects]]
